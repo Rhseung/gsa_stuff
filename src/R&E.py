@@ -1,6 +1,4 @@
-from kiwipiepy import Kiwi
-kiwi = Kiwi()
-kiwi.prepare()
+from eunjeon import Mecab
+m = Mecab()
 
-for result, score in kiwi.analyze("형태소 분석 결과입니다.", top_n=5):
-    print(result, sep='\t')
+print(m.pos("이것은 메캅 테스트입니다. 사용자 사전을 등록하기 전입니다. 비타500"))

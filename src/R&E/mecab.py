@@ -52,6 +52,5 @@ tags = {
 }
 
 tokeninzed = mecab.pos('봄의 첫날, 나는 줄곧 가을의 끝을 생각하네.')
-# tokeninzed = mecab.pos('''파리바게뜨 가맹점주들이 민주노총 화학섬유식품노조 파리바게뜨지회(이하 민노 화섬노조) 소속 제빵기사의 계속적인 임금인상 요구로 인해 어려움을 호소하고 있다.''')
 
 pprint([(item[0], '+'.join([tags[tag] for tag in item[1].split('+')])) for item in tokeninzed])
